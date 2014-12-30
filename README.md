@@ -79,7 +79,7 @@ You have to create a database on the server
 
     $ ssh -t dokku@vagrant postgresql:create <dbname>
     $ ssh -t dokku@vagrant postgresql:link <name> <dbname>
-
+    $ ssh -t dokku@vagrant run python manage.py syncdb
 
 LOCAL DEVELOPMENT
 -----------------
