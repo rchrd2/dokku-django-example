@@ -74,6 +74,13 @@ have to configure the ``C_FORCE_ROOT`` environment variable:
 
     $ ssh -t dokku@vagrant config:set elipse C_FORCE_ROOT=1
 
+
+You have to create a database on the server
+
+    $ ssh -t dokku@vagrant postgresql:create <dbname>
+    $ ssh -t dokku@vagrant postgresql:link <name> <dbname>
+
+
 LOCAL DEVELOPMENT
 -----------------
 
